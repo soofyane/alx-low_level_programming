@@ -8,12 +8,11 @@
  */
 int main(void)
 {
-	int n;
+	int n, ldn;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	int ldn = n;
-
+	ldn = n;
 	while (ldn > 10)
 	{
 		ldn = ldn /  10;
