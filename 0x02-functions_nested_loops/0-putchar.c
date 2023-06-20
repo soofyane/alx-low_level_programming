@@ -1,18 +1,20 @@
-#include <stdio.h>
-#include <string.h>
-#include <main.h>
-/**
- * main -  prints _putchar, followed by a new line.
- *
- * Return: 0 (code ran succefully)
- */
-int main()
-{
-	char p[] = "_putchar\n";
+#include "main.h"
 
-	for (int a = 0; a < strlen(p); a++)
+/**
+ * main - Prints _putchar as a message.
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	int p[] = {95, 112, 117, 116, 99, 104, 97, 114};
+	int a, size;
+
+	size = sizeof(p) / sizeof(int);
+	for (a = 0; a < size; a++)
 	{
 		_putchar(p[a]);
 	}
+	_putchar('\n');
 	return (0);
 }
