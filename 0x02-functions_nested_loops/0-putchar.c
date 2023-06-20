@@ -7,7 +7,7 @@
  */
 int main()
 {
-	char p[] = "putchar\n";
+	char p[] = "_putchar\n";
 
 	for (int a = 0; a < strlen(p); a++)
 	{
