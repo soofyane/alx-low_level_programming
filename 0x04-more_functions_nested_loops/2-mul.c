@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * mul(int a, int b) - multiply two integers
+ * mul - multiply two integers
  * @a: Character
  * @b: Character
  * Return: Multiple of two integers
