@@ -11,7 +11,7 @@ int _isdigit(int c)
 	int test;
 
 	test = c / 10;
-	if (test == 0)
+	if (test < 1)
 	{
 		return (1);
 	}
