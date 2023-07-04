@@ -8,8 +8,9 @@
 char *_strchr(char *s, char c)
 {
 	unsigned int i;
-
-	for (i = 0; i < sizeof(*s); i++)
+	
+	i = 0;
+	while (*s != '\0')
 	{
 		if (*(s + i) == c)
 		{
@@ -19,5 +20,8 @@ char *_strchr(char *s, char c)
 		{
 			return (NULL);
 		}
+		s++;
+		i++;
+	}
 }
 
