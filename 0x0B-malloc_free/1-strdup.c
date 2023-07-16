@@ -16,8 +16,8 @@ char *_strdup(char *str)
 
 	if (str != NULL)
 	{
-		amina = malloc(sizeof(*str) * sizeof(char));
-		for (i = 0; i < strlen(str); i++)
+		amina = malloc(strlen(str) * sizeof(char));
+		for (i = 0; i < strlen(str)+1; i++)
 		{
 			amina[i] = str[i];
 		}
