@@ -13,6 +13,7 @@ char *_strdup(char *str)
 {
 	unsigned int i;
 	char *amina;
+
 	if (str != NULL)
 	{
 		amina = malloc(strlen(str) * sizeof(char));
