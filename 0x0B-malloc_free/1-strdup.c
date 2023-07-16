@@ -10,7 +10,7 @@
  */
 char *_strdup(char *str)
 {
-	int i;
+	unsigned int i;
 	char *amina;
 	if (str != NULL)
 	{
@@ -19,7 +19,6 @@ char *_strdup(char *str)
 		{
 			amina[i] = str[i];
 		}
-		free(amina);
 		return (amina);
 	}
 	else
