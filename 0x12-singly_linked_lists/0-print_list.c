@@ -7,16 +7,21 @@
  */
 size_t print_list(const list_t *h)
 {
-	size_t count = 0;
+	size_t count;
+       
+	count = 0;
 	if (h == NULL)
 		printf("empty list");
-	list_t *ptr = NULL;
-	ptr = h;
-	while (ptr != NULL)
+	while (h != NULL)
 	{
+		if (h->str == NULL)
+			printf("[0](nil)\n");
+		else
+		{
+			printf("[%d] %s\n",h->len, h->str);
+		}	
 		count++;
-		printf("[%d] %s\n",ptr->len, ptr->str);
-		ptr = ptr->link;
+		h = h->next;
 	}
 	return (count);
 }
