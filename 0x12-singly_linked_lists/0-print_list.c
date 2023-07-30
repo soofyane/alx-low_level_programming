@@ -10,7 +10,7 @@ size_t print_list(const list_t *h)
 	size_t count = 0;
 	if (h == NULL)
 		printf("empty list");
-	struct node *ptr = NULL;
+	list_t *ptr = NULL;
 	ptr = h;
 	while (ptr != NULL)
 	{
